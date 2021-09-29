@@ -1,0 +1,205 @@
+
+:root {
+    --color-bg: #121212;
+    --color-text-main: #FFFFFE;
+    --color-primary: #FFFF00;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 3rem;
+    --font-family: "HK Grotesk";
+    --font-family-header: "HK Grotesk";
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Import fonts */
+  @font-face {
+    font-family: HK Grotesk;
+    src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+      format("opentype");
+  }
+  @font-face {
+    font-family: HK Grotesk;
+    font-weight: bold;
+    src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+      format("opentype");
+  }
+  
+  body {
+    font-family: HK Grotesk;
+    background-color: var(--color-bg);
+  }
+  
+  h1 {
+    color: #f79e2a;
+    text-shadow: 1px 1px grey;
+    border-bottom: 2px solid rgb(78, 78, 78);
+    width: 50%;
+  }
+  .logo {
+    max-width: 60px;
+    max-height: 50px;
+  
+  }
+  h2 {
+      color: rgb(207, 53, 53);
+      line-height: 0px;
+  }
+  .slogan {
+      line-height: 50px;
+      color: rgb(134, 134, 134);
+  }
+  .about {
+      margin-top: 144px;
+      background-color: white;
+      width: 500px;
+      height: 400px;
+      border-radius: 16px;
+      box-shadow: #121222 5px -5px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .about > h2, .about > .hr {
+    position: relative;
+    top: 50px;
+
+  }
+  .about > h2 {
+      color: rgb(32, 32, 32);
+      
+  }
+  .about > p {
+      position: relative;
+      top: 60px;
+  }
+  #hcg-slider-1 .hcg-slide-container {
+	width: auto;
+	height: auto;
+}
+.hcg-slider {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hcg-slide-container {
+	max-width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.hcg-slides {
+	display: none;
+	text-align: center;
+	overflow: hidden;
+}
+.hcg-slides img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	border-radius: 5px;
+	border: solid 1px #a0a0a0;
+	vertical-align: middle;
+}
+.hcg-slide-prev, .hcg-slide-next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	text-decoration: none;
+}
+.hcg-slide-next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.hcg-slide-prev {
+	left: 0;
+	border-radius: 0 3px 3px 0;
+}
+.hcg-slide-prev:hover, .hcg-slide-next:hover {
+	background-color: #000c;
+}
+.hcg-slide-dot-control {
+	margin-top: 10px;
+	text-align: center;
+}
+.hcg-slide-dot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+.hcg-slide-dot.dot-active {
+	background-color: #717171;
+}
+/************CSS Animation***********/
+
+.animated { 
+	animation-name: bounceInLeft; 
+	animation-duration: 1s;
+}
+@keyframes bounceInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+	60% {
+		opacity: 1;
+		transform: translateX(30px);
+	}
+	80% {
+		transform: translateX(-10px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+.bounceInLeft {
+	animation-name: bounceInLeft;
+}
+.about > hr {
+    background-color: grey;
+    height: 30px;
+  }
+  .staffing > hr {
+    background-color: rgba(128, 128, 128, 0.13);
+    height: 30px;
+    border: 0;
+  }
+  .staffing > h2 {
+    color: rgb(247, 148, 20);
+    font-size: 26px;
+  }
+  .staffing a {
+    color: rgb(247, 148, 20);
+    font-size: 26px;
+    text-decoration: none;
+
+  }
+  .staffing a:hover {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    font-size: 30px;
+    transition: font-size 2s ease-in-out;
+    -webkit-transition:font-size 2s ease-in-out;
+    -o-transition:font-size 2s ease-in-out;
+  }
+  @keyframes identifier {
+    from {
+        font-size: 100%;
+      }
+    
+      to {
+        font-size: 28px;
+
+      }
+    }
+  
+  
